@@ -427,6 +427,102 @@ button{
   }
 }
 /*Home Desktop*/
-/*@media (min-width: 545px){
-
-}*/
+@media (min-width: 769px){
+  .nav{
+    height: 10vw;
+  }
+  .nav-icon-cont{
+    flex-basis: 9%;
+  }
+  .upnext{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .upnext h5{
+    flex-basis: 100%;
+  }
+  .upnext-main{
+    flex-basis: 40%;
+    height: 29vw;
+  }
+  .upnext-main a{
+    font-size: 1.75rem;
+  }
+  .upnext-next{
+    flex-basis: 40%;
+    margin-top: 0vw;
+    margin-left: 10%;
+  }
+  .upnext-item{
+    flex-basis: 50%;
+  }
+  .upnext-item .upnext-img{
+    height: 24vw;
+  }
+  .upnext-img{
+    height: 26vw;
+  }
+  ul li{
+    flex-basis: 11%;
+    padding-top: 6%;
+  }
+  .upnext-txt ul li{
+    flex-basis: 9%;
+  }
+  .upnext-txt{
+    margin-top: 2vw;
+  }
+  footer ul{
+    height: 10vw;
+  }
+  .footer{
+    flex-basis: 9%;
+    padding-top: 4%;
+  }
+  #copyright{
+    flex-basis: 73%;
+    padding-top: 4vw;
+  }
+  /*Calendar Desktop*/
+  .calendar-num{
+    height: 22%;
+    width: 22%;
+    padding-top: .65vw;
+    font-size: 1.2rem;
+  }
+  .calendar{
+    padding-bottom: 3vw;
+  }
+  /*Join Desktop*/
+  .greyprof{
+    width: 69%;
+    height: 20vw;
+  }
+  .picfrm{
+    flex-basis: 30%;
+  }
+  .txtfrm{
+    flex-direction: row;
+    display:flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    height: 10vw;
+  }
+  .txtfrm div{
+    flex-basis: 40%;
+    margin-bottom: 0%;
+    height: 4vw;
+    margin: 3%;
+  }
+  .cbox-item{
+    flex-basis: 28%;
+    margin: 1vw;
+  }
+  .txtarea{
+    width: 60%;
+  }
+  button{
+    width: 11vw;
+    height: 4vw;
+  }
+}
