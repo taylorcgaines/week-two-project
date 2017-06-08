@@ -1,0 +1,432 @@
+/*text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF
+
+small 320 - 544
+medium 545 - 768
+large 769 - up*/
+
+/*HomePage*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "PT Sans", sans-serif;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  height: 28vw;
+}
+.navhome{
+  background-color: #00A5BF;
+}
+.navcal{
+  background-color: #00B7D3;
+}
+.navjoin{
+  background-color: #00D5E7;
+}
+#copyright{
+  background-color: rgb(92,226,236);
+}
+ul{
+  flex-basis:77%;
+  height: 100%;
+  list-style: none;
+  text-align: center;
+}
+ul li{
+  height: 33.3%;
+  padding-top: 2%;
+}
+ul a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: .85rem;
+}
+#copyright{
+  color: #FFFFFF;
+  padding-top: 7vw;
+  height: 20vw;
+  font-size: .85rem;
+}
+.nav-icon-cont{
+  flex-basis:23%;
+  background-color: #F5005B;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-icon{
+  background-image: url(../images/filmclub.png);
+  background-repeat: no-repeat;
+  background-color: #F5005B;
+  background-size: contain;
+  width: 85%;
+  height: 85%;
+}
+h1{
+  color: #0B1942;
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+h2{
+  background-color: #0B1942;
+  color: white;
+  width: 90%;
+  margin-left: 5%;
+  padding-left: 5%;
+  font-size: 1.5rem;
+  font-weight:lighter;
+}
+h1, h2{
+  margin: 5%;
+}
+p{
+  margin: 5%;
+}
+footer ul{
+  width: 100%;
+  height: 28vw;
+}
+.upnext{
+  background-color: #0B1942;
+  padding-bottom: 5vw;
+}
+.upnext h5{
+  color: white;
+  font-size: 2.1rem;
+  font-weight: normal;
+  padding:2%;
+  margin-left: 5%;
+}
+.upnext-main{
+  background-color: #E2E2E2;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.upnext-main .upnext-img{
+  flex-basis: 45%;
+  margin: 3%;
+}
+.upnext-txt{
+  flex-basis: 45%;
+  margin-top: 5vw;
+  font-size: .85rem;
+}
+.upnext-txt p{
+  padding-bottom: 8%;
+  border-bottom: 1px solid #0B1942;
+  margin-left: 0%;
+}
+.upnext-txt a{
+  color: #00B7D3;
+  font-size: 1.2rem;
+}
+.upnext-txt ul li{
+  margin-left: 15%;
+}
+.upnext-main ul{
+  list-style:circle;
+  text-align: left;
+}
+.upnext-main ul li{
+  height: 10%;
+}
+.upnext-next{
+  background-color: #E2E2E2;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5vw;
+  padding-bottom: 2vw;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.upnext-item{
+  flex-basis: 47%;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+}
+.upnext-item a{
+    color: #00B7D3;
+    margin-top: 4%;
+}
+.upnext-item p{
+  margin-left: 0%;
+  margin-top: 4%;
+}
+.upnext-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 58vw;
+  margin: .5vw;
+}
+#Rashomon{
+  background-image: url(../images/rashomon-poster.jpg);
+}
+#TheGreatTrainRobbery{
+  background-image: url(../images/great-train-poster.jpg);
+}
+#TheBicycleThief{
+  background-image: url(../images/bicycle-thief-poster.jpg);
+}
+#Nosferatu{
+  background-image: url(../images/nosferatu-poster.jpg);
+}
+#Metropolis{
+  background-image: url(../images/metropolis-poster.jpg);
+}
+/*Calendar*/
+.calendar{
+    background-color: #0B1942;
+    color: white;
+    padding-top: 1vw;
+    font-weight: lighter;
+    padding-bottom: 10vw;
+}
+.calendar h2{
+  padding-left: 0vw;
+}
+.calendar-body{
+  display: flex;
+  flex-direction: column;
+  height: 70vw;
+}
+.calendar-row{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 20%;
+  justify-content: space-between;
+}
+.calendar-day{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 14.285%;
+  background-color: white;
+  margin: .17vw .17vw .17vw .17vw;
+}
+.calendar-num{
+  background-color: #0B1942;
+  height: 50%;
+  width: 45%;
+  font-size: .65rem;
+  text-align: center;
+  padding-top: 2vw;
+}
+/*Join*/
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 5vw;
+}
+label{
+  font-size: .85rem;
+}
+.txtfrm div{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 5vw;
+}
+.cboxfrm p{
+  margin-left: 0%;
+  font-size: .85rem;
+}
+.cboxfrm-in{
+  display:flex;
+  flex-direction: column;
+}
+.cbox-item{
+  margin: 2vw;
+}
+.txtarea{
+  display: flex;
+  flex-direction: column;
+}
+.txtbx{
+  border: 1px solid lightgrey;
+}
+.greyprof{
+  background-image: url(..//images/profile-placeholder.png);
+  background-size: contain;
+  width: 90%;
+  height: 80vw;
+  border-radius: 100vw;
+  background-position: center;
+  align-self: center;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  margin-left: 5vw;
+}
+textarea{
+  border: 1px darkgrey solid;
+}
+.txtarea{
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+button{
+  background-color: #F5005B;
+  color: white;
+  font-size: .85rem;
+  width: 35vw;
+  height: 15vw;
+  margin-bottom: 10vw;
+}
+/*Home Tablet*/
+@media (min-width: 545px){
+  .nav{
+    height: 17vw;
+    background-color:rgb(92,226,236);
+  }
+  .nav-icon-cont{
+    flex-basis: 15%;
+  }
+  ul{
+    display: flex;
+  }
+  ul li{
+    height: 100%;
+    flex-basis: 18%;
+    padding-top: 9%;
+  }
+  ul a{
+    font-size: 1rem;
+  }
+  .footer{
+    flex-basis: 14%;
+    padding-top: 7%;
+  }
+  footer ul{
+    height:17vw;
+  }
+  #copyright{
+    height: 100%;
+    flex-basis: 58%;
+    text-align: right;
+    padding-right: 3vw;
+  }
+  .getinv-body{
+    display:flex;
+    flex-direction: row;
+  }
+  .getinv-head{
+    width: 100%;
+  }
+  .getinv-item{
+    flex-basis: 33.3%;
+    margin-bottom: 3%;
+  }
+  h1{
+    margin: 2%;
+  }
+  h2{
+    margin:5%;
+  }
+  .upnext-txt ul{
+    flex-direction: column;
+  }
+  .upnext-txt ul li{
+    padding-top: 0%;
+    flex-basis: 10%;
+    margin-left: 7%;
+  }
+  .upnext-item{
+    flex-basis: 25%;
+  }
+  .upnext-item .upnext-img{
+    height: 30vw;
+    background-size: cover;
+  }
+  .upnext-next{
+    padding: 0vw 2vw 0vw 2vw;
+  }
+  /*Calendar Tablet*/
+  .calendar h2{
+    margin: 2vw;
+  }
+  .calendar-num{
+    height: 30%;
+    width: 25%;
+    padding-top: 1.5vw;
+  }
+  /*Join Tablet*/
+  .top{
+    display: flex;
+    flex-direction: row;
+  }
+  .greyprof{
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 36vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+    margin-left: 3vw;
+    margin-right: 0vw;
+  }
+  .picfrm{
+    flex-basis: 50%;
+  }
+  .txtfrm{
+    flex-basis: 50%;
+  }
+  form{
+    margin: 2vw;
+  }
+  form h1{
+    font-size: 2rem;
+    margin: 0vw 0vw 3vw 0vw;
+  }
+  .cboxfrm-in{
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+  }
+  .cbox-item{
+    flex-basis: 40%;
+  }
+  .cboxfrm p{
+    margin: 2vw;
+  }
+  .txtarea{
+    margin: 0vw;
+  }
+  button{
+    width: 17vw;
+    height: 8vw;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+  }
+}
+/*Home Desktop*/
+/*@media (min-width: 545px){
+
+}*/
